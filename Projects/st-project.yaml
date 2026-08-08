@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: st-project
+  namespace: argocd
+spec:
+  description: st team project
+  sourceRepos:
+    - 'https://github.com/sahu04/agaro_cd.git'
+  destinations:
+    - namespace: st
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: ''
+      kind: Namespace
