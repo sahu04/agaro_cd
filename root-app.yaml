@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/sahu04/agaro_cd.git
-    targetRevision: main
+    targetRevision: master
     path: .
     directory:
       recurse: true
